@@ -4,8 +4,8 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ~$*LButton::
-While (GetKeyState("Lbutton", "P") and GetKeyState("F8", "T")){
+While (GetKeyState("Lbutton", "P") and GetKeyState("F8", "P")){
     Click
-    Sleep 50
+    Sleep 200
 }
 return
